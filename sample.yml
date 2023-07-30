@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts: web
+  hosts: all
   vars:
     URL: google.com
   tasks:
