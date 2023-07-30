@@ -1,0 +1,9 @@
+- name: install nginx
+  hosts: web
+  vars:
+    URL: google.com
+  tasks:
+    - name: print variable
+      ansible.builtin.debug:
+        msg: URL={{ URL}}
+  #Ansible accessing varible with 2 flower brackets
